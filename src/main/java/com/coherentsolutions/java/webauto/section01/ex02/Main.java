@@ -13,7 +13,8 @@ public class Main {
         Employee developer2 = new Employee("Jack", "White", 35, "Developer");
         Employee officeManager = new Employee("Jill", "Green", 28, "Office Manager");
 
-        tester1.setSalary(50000);
+        tester1.setSalary(60000);
+        tester1.setPosition("Developer");
         tester2.setSalary(52000);
         developer1.setSalary(70000);
         developer2.setSalary(72000);

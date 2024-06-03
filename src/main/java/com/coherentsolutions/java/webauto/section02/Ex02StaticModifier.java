@@ -11,6 +11,10 @@ public class Ex02StaticModifier {
     // Instance variable
     public int instanceCount = 0;
 
+    public Ex02StaticModifier() {
+        staticCount++;
+    }
+
     // Static method
     public static void incrementStaticCount() {
         staticCount++;
@@ -26,9 +30,16 @@ public class Ex02StaticModifier {
         Ex02StaticModifier.incrementStaticCount();
         System.out.println("Static Count: " + Ex02StaticModifier.staticCount);
 
+
         // Accessing instance method
         Ex02StaticModifier example = new Ex02StaticModifier();
+
         example.incrementInstanceCount();
         System.out.println("Instance Count: " + example.instanceCount);
+
+        System.out.println("Static Count: " + Ex02StaticModifier.staticCount);
+
+        Ex02StaticModifier example2 = new Ex02StaticModifier();
+        System.out.println("Static Count: " + Ex02StaticModifier.staticCount);
     }
 }

@@ -14,6 +14,15 @@ public class Ex04ConstructorOverloading {
         this.name = name;
     }
 
+    public Ex04ConstructorOverloading(String position, boolean isPosition) {
+        this.position = position;
+    }
+
+    public Ex04ConstructorOverloading(int age, String position) {
+        this.age = age;
+        this.position = position;
+    }
+
     // Constructor with two parameters
     public Ex04ConstructorOverloading(String name, int age) {
         this(name); // Call the constructor with one parameter
@@ -34,6 +43,7 @@ public class Ex04ConstructorOverloading {
     public static void main(String[] args) {
         Ex04ConstructorOverloading emp1 = new Ex04ConstructorOverloading("John");
         Ex04ConstructorOverloading emp2 = new Ex04ConstructorOverloading("Jane", 25);
+        Ex04ConstructorOverloading emp4 = new Ex04ConstructorOverloading(26,"Developer");
         Ex04ConstructorOverloading emp3 = new Ex04ConstructorOverloading("Jim", 30, "Developer");
 
         System.out.println(emp1);

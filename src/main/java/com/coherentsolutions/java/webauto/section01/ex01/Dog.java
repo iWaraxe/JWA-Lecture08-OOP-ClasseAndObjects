@@ -22,6 +22,7 @@ public class Dog {
         this.color = color;
     }
 
+
     /**
      * Dog barks.
      */
@@ -50,5 +51,27 @@ public class Dog {
      */
     public String getName() {
         return name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        }
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

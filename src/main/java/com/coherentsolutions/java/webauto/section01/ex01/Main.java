@@ -8,6 +8,12 @@ public class Main {
      */
     public static void main(String[] args) {
         Dog rex = new Dog("Rex", 5, "Brown");
+        Dog tRex = new Dog("tRex", 3, "Green");
+
+        Cat cat = new Cat();
+        System.out.println(rex.getAge());
+        rex.setAge(-6);
+        System.out.println(rex.getAge());
         rex.bark();
         rex.eat();
         rex.sleep();
